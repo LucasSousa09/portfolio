@@ -11,7 +11,8 @@ module.exports = {
     screens: {
       'sm': '300px',
       'md': '640px',
-      'lg': '1024px'
+      'lg': '1024px',
+      'xl': '1260px'
     },
     extend: {
       animation: {
@@ -30,5 +31,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
