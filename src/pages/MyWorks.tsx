@@ -22,15 +22,17 @@ export function MyWorks(){
   }
 
   return (
-    <div className="flex flex-col md:mx-12 lg:mx-14 xl:mx-auto xl:max-w-[1148px]" >
-      <header className="relative md:my-16 lg:my-20">
-        <img src={logoPurpleSmall} alt="Logo but Smaller and purple" className="absolute top-[50%] translate-y-[-50%] left-0 md:h-24    "/>
-        <strong className="flex text-blue-900 md:pl-9 lg:pl-11 md:text-3xl lg:text-4xl">My Work's</strong>
+    <div className="flex flex-col sm:mx-8 md:mx-12 lg:mx-14 xl:mx-auto xl:max-w-[1148px]" >
+      <header className="flex sm:justify-center md:justify-start sm:my-8 md:my-16 lg:my-20">
+        <div className="relative">
+          <img src={logoPurpleSmall} alt="Logo but Smaller and purple" className="absolute top-[50%] translate-y-[-50%] left-0 sm:h-20 md:h-24 "/>
+          <strong className="flex text-blue-900 sm:pl-7 md:pl-9  sm:text-2xl md:text-3xl lg:text-4xl">My Work's</strong>
+        </div>
       </header>
 
       <div className="relative">
         <SliderButtonLeft handleClick={handleLeftClick} />
-        <div className="flex justify-between gap-8 p-4 overflow-x-scroll scrollbar-hide relative" ref={caroussel}>
+        <div className="flex sm:flex-col md:flex-row justify-between gap-8 p-4 overflow-x-scroll scrollbar-hide relative" ref={caroussel}>
           <WorkCard />
           <WorkCard />
           <WorkCard />
