@@ -22,7 +22,7 @@ export function MyWorks(){
   }
 
   return (
-    <div className="flex flex-col sm:mx-8 md:mx-12 lg:mx-14 xl:mx-auto xl:max-w-[1148px]" >
+    <div id="my-works" className="snap-start flex flex-col sm:pt-[88px]  md:h-[calc(100vh-92px)] sm:mx-8 md:mx-12 lg:mx-14 xl:mx-auto xl:max-w-[1148px]" >
       <header className="flex sm:justify-center md:justify-start sm:my-8 md:my-16 lg:my-20">
         <div className="relative">
           <img src={logoPurpleSmall} alt="Logo but Smaller and purple" className="absolute top-[50%] translate-y-[-50%] left-0 sm:h-20 md:h-24 "/>
