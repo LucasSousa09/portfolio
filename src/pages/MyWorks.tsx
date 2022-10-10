@@ -1,7 +1,5 @@
 import { useRef } from 'react';
 
-import { CaretCircleLeft, CaretCircleRight } from 'phosphor-react'
-
 import { WorkCard } from "../components/WorkCard";
 import { SliderButtonRight, SliderButtonLeft } from '../components/SliderButton';
 
@@ -13,13 +11,13 @@ export function MyWorks(){
 
   function handleRightClick(){
     if(caroussel.current !== null){
-      caroussel.current.scrollLeft = 50
+      caroussel.current.scrollLeft += 50
     }
   }
   
   function handleLeftClick(){
     if(caroussel.current !== null){
-      caroussel.current.scrollLeft = 0
+      caroussel.current.scrollLeft -= 50
     }
   }
 
@@ -32,7 +30,7 @@ export function MyWorks(){
 
       <div className="relative">
         <SliderButtonLeft handleClick={handleLeftClick} />
-        <div className="flex justify-between gap-8 overflow-x-scroll scrollbar-hide relative" ref={caroussel}>
+        <div className="flex justify-between gap-8 p-4 overflow-x-scroll scrollbar-hide relative" ref={caroussel}>
           <WorkCard />
           <WorkCard />
           <WorkCard />
@@ -43,24 +41,3 @@ export function MyWorks(){
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//https://novelfull.com/my-wife-is-a-beautiful-ceo/chapter-344-embarrassment.html
