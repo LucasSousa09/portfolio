@@ -11,10 +11,18 @@ module.exports = {
     screens: {
       'sm': '300px',
       'md': '640px',
+      '2md':'800px',
       'lg': '1024px',
       'xl': '1260px'
     },
     extend: {
+      colors: {
+        main: {
+          50: '#F7F5FF',
+         300: '#A594E2',
+         500: '#685F8C'
+        }
+      },
       animation: {
         'descent': 'descent 2s forwards',
         'turningVisible': 'turningVisible 2s 6s forwards'

@@ -30,7 +30,7 @@ export function Header(){
               )
             }
             <ul className="flex sm:flex-col md:flex-row sm:gap-6 md:gap-0 sm:w-full md:w-[300px] md:text-sm lg:text-base justify-between font-medium text-zinc-400">
-              <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#"> About Me </a> </li>
+              <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#about-me"> About Me </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#my-works"> My work's </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#"> Hire me </a> </li>
             </ul>
@@ -45,7 +45,7 @@ export function Header(){
               )
             }
             <ul className="flex sm:flex-col md:flex-row sm:gap-6 md:gap-0 sm:w-full md:w-[300px] md:text-sm lg:text-base justify-between font-medium text-zinc-400">
-              <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#"> About Me </a> </li>
+              <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#about-me"> About Me </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#my-works"> My work's </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 md:border-0 sm:border-zinc-600 sm:w-full sm:text-end"> <a href="#"> Hire me </a> </li>
             </ul>

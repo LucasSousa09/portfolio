@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { useEffect, useRef, useState } from 'react';
 
+import { Heading } from '../components/Heading';
 import { WorkCard } from "../components/WorkCard";
+import { PageContainer } from '../components/PageContainer';
 import { SliderButtonRight, SliderButtonLeft } from '../components/SliderButton';
-
-import logoPurpleSmall  from '../assets/logoPurpleSmall.svg'
 
 interface WorkProps {
   id: string,
@@ -38,14 +38,8 @@ export function MyWorks(){
   }
 
   return (
-    <div id="my-works" className="snap-start flex flex-col sm:pt-[88px] md:pt-0 md:h-[calc(100vh-92px)] sm:mx-8 md:mx-12 lg:mx-14 xl:mx-auto xl:max-w-[1148px]" >
-      <header className="flex sm:justify-center md:justify-start sm:my-8 md:my-16 lg:my-20">
-        <div className="relative">
-          <img src={logoPurpleSmall} alt="Logo but Smaller and purple" className="absolute top-[50%] translate-y-[-50%] left-0 sm:h-20 md:h-24 "/>
-          <strong className="flex text-blue-900 sm:pl-7 md:pl-9  sm:text-2xl md:text-3xl lg:text-4xl">My Work's</strong>
-        </div>
-      </header>
-
+    <PageContainer id="my-works">
+      <Heading title="My Work's"/>
       <div className="relative">
         <SliderButtonLeft handleClick={handleLeftClick} />
         <div className="flex scroll-smooth sm:flex-col md:flex-row justify-between gap-8 p-4 overflow-x-scroll scrollbar-hide relative" ref={caroussel}>
@@ -56,6 +50,6 @@ export function MyWorks(){
         <SliderButtonRight handleClick={handleRightClick} />
       </div>
 
-    </div>
+    </PageContainer>
   )
 }
