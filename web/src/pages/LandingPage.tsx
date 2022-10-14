@@ -3,7 +3,7 @@ import { CaretDown } from "phosphor-react";
 
 export function LandingPage(){
   return (
-    <div className="snap-start z-10 relative sm:h-[calc(100vh-88px)] md:h-[calc(100vh-92px)] max-w-[1400px] mx-auto"> 
+    <div id="landing" className="snap-start z-10 relative sm:h-[calc(100vh-88px)] md:h-[calc(100vh-92px)] max-w-[1400px] mx-auto"> 
       <div className="flex flex-col font-bold text-zinc-800 sm:gap-6 md:gap-8 lg:gap-10 sm:pt-16 md:pt-44 lg:pt-52 sm:px-3 md:px-20 sm:text-3xl sm:text-center sm:items-center md:text-5xl md:items-start md:text-left lg:text-6xl">
         <h1 className="animate-descent z-50">Solid  and Simple!</h1>
         <h1 className="leading-relaxed animate-[descent_2s_2s_forwards] opacity-0 z-50">A Refreshing Web Experience!</h1>
