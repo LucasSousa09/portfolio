@@ -19,8 +19,10 @@ module.exports = {
       colors: {
         main: {
           50: '#F7F5FF',
+         100: '#F1ECFF',
          300: '#A594E2',
-         500: '#685F8C'
+         500: '#685F8C',
+         700: "#4F4869"
         }
       },
       animation: {
