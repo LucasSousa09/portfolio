@@ -1,19 +1,7 @@
 import { InputHTMLAttributes } from "react";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
-    variant?: string,
-}
-
-export function Input({ variant, ...rest }: InputProps){
+export function Input({ ...rest }: InputHTMLAttributes<HTMLInputElement>){
   return (
-    <>
-    {
-      variant ?
-      <input {...rest} className="w-full h-44 bg-main-100 rounded outline-1 outline-main-700 pl-4 mb-6 text-main-500" />
-      :
-      <input {...rest} className="w-full h-14 bg-main-100 rounded outline-1 outline-main-700 pl-4 mb-6 text-main-500" />
-      
-    }
-    </>
+      <input {...rest} className="rounded bg-main-100 outline-1 outline-main-500 text-main-500 w-full pl-4 mb-6 sm:h-10 sm:text-sm 2md:h-12 lg:h-14 " />
   )
 }
