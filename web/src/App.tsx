@@ -1,8 +1,9 @@
 import { Header } from "./components/Header";
 
-import { AboutMe } from "./pages/AboutMe";
+import { HireMe } from "./pages/HireMe";
 import { MyWorks } from './pages/MyWorks'
-import { LandingPage } from "./pages/LandingPage";
+import { AboutMe } from "./pages/AboutMe";
+import { Home } from "./pages/Home";
 
 export function App() {
 
@@ -10,9 +11,10 @@ export function App() {
   return (
     <div className="sm:mt-[88px] md:mt-[92px] sm:h-[calc(100vh-88px)] md:h-[calc(100vh-92px)] overflow-y-scroll scroll-smooth">
       <Header />
-      <LandingPage />
+      <Home />
       <AboutMe />
       <MyWorks />
+      <HireMe />
     </div>
   )
 }
