@@ -1,10 +1,14 @@
 import axios from 'axios'
-import { useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 
 import { Heading } from '../components/Heading';
 import { WorkCard } from "../components/WorkCard";
 import { PageContainer } from '../components/PageContainer';
 import { SliderButtonRight, SliderButtonLeft } from '../components/SliderButton';
+
+interface MyWorkProps {
+  myWorksContainerRef: RefObject<HTMLDivElement>
+}
 
 interface WorkProps {
   id: string,
@@ -14,13 +18,13 @@ interface WorkProps {
   projectUrl: string
 }
 
-export function MyWorks(){
+export function MyWorks({ myWorksContainerRef }: MyWorkProps){
   const [works, setWorks] = useState<WorkProps[]>([])
 
-  useEffect(() => {
-    axios('http://localhost:3333/works')
-    .then(response => setWorks(response.data))
-  },[])
+  // useEffect(() => {
+  //   axios('http://localhost:3333/works')
+  //   .then(response => setWorks(response.data))
+  // },[])
 
   const caroussel = useRef<HTMLDivElement>(null)
 
@@ -38,7 +42,7 @@ export function MyWorks(){
   }
 
   return (
-    <PageContainer id="my-works">
+    <PageContainer id="my-works" pageContainerRef={myWorksContainerRef}>
       <Heading title="My Work's"/>
       <div className="relative">
         <SliderButtonLeft handleClick={handleLeftClick} />

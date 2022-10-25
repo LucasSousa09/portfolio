@@ -1,9 +1,14 @@
 import logoImg  from '../assets/logo.svg'
 import { CaretDown } from "phosphor-react";
+import { Ref, RefObject } from 'react';
 
-export function Home(){
+interface HomeProps{
+  homeContainer: RefObject<HTMLDivElement>
+}
+
+export function Home({ homeContainer }: HomeProps){
   return (
-    <div id="home" className="relative max-w-[1400px] mx-auto z-10 sm:flex sm:items-center sm:justify-center sm:h-[calc(100vh-88px)] md:block md:min-h-[700px] md:h-[calc(100vh-92px)]"> 
+    <div id="home" className="relative max-w-[1400px] mx-auto z-10 sm:flex sm:items-center sm:justify-center sm:h-[calc(100vh-88px)] md:block md:min-h-[700px] md:h-[calc(100vh-92px)]" ref={homeContainer}> 
       <div className="flex flex-col font-bold text-zinc-800 sm:mt-[-124px] sm:gap-2 sm:pt-16 sm:px-3 sm:text-3xl sm:text-center sm:items-center md:gap-4 md:max-w-[750px] md:pt-44 md:mt-0 md:px-20 md:text-5xl md:items-start md:text-left lg:pt-52 lg:gap-8 lg:text-6xl">
         <h1 className="animate-descent z-50">Dev frontend</h1>
         <h1 className="leading-relaxed animate-[descent_2s_2s_forwards] opacity-0 z-50">Helping you to give your designs life!</h1>
