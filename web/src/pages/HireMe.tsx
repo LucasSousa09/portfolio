@@ -20,6 +20,7 @@ export function HireMe({ hireMeContainerRef }: HireMeProps){
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
 
 
   function handleSubmit(evt: FormEvent){
@@ -27,12 +28,19 @@ export function HireMe({ hireMeContainerRef }: HireMeProps){
 
     axios.post('http://localhost:3333/mail',{name, email, message})
       .then(response => console.log(response.data))
+      .catch(err => setErrorMessage(`Sorry the message was not successfully send. ERROR MESSAGE: ${err.message}`))
+  }
+
+  function handleErrorMessage(){
+    setTimeout(() => setErrorMessage(''), 5000)
+    return <p className="bg-red-600 text-center text-white font-semibold mt-4 px-4 py-2 rounded">{errorMessage}</p>
   }
 
   return (
     <PageContainer id="hire-me" pageContainerRef={hireMeContainerRef}>
         <Heading title="Hire Me" />
         <div className="text-main-700">
+          <p className="text-red-600 font-medium leading-10">The platform email sending is still not functional, please use the other methods bellow </p>
           <p className="sm:text-sm sm:pb-5 md:text-base md:pb-12">
             Feel free to contact me any time, through any method bellow 
           </p>
@@ -49,6 +57,9 @@ export function HireMe({ hireMeContainerRef }: HireMeProps){
 
 
               <button className="bg-main-500 text-zinc-50 rounded font-bold py-3 sm:w-full sm:text-sm md:w-28 md:text-base" type="submit">Send it!</button>
+              {
+                errorMessage !== '' && handleErrorMessage()
+              }
             </form>
             <div className="flex flex-col gap-6 my-10">
               <SocialLink imgSrc={githubIcon} altAtb='Github Icon' linkUrl="https://github.com/LucasSousa09/"   />
