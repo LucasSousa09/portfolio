@@ -40,7 +40,7 @@ export function HireMe({ hireMeContainerRef }: HireMeProps){
     <PageContainer id="hire-me" pageContainerRef={hireMeContainerRef}>
         <Heading title="Hire Me" />
         <div className="text-main-700">
-          <p className="text-red-600 font-medium leading-10">The platform email sending is still not functional, please use the other methods bellow </p>
+          <p className="text-red-600 font-medium mb-4 sm:text-sm md:text-base">The platform email sending is still not functional, please use the other methods bellow </p>
           <p className="sm:text-sm sm:pb-5 md:text-base md:pb-12">
             Feel free to contact me any time, through any method bellow 
           </p>

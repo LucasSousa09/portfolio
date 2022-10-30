@@ -22,7 +22,6 @@ export function App() {
   function handleOnScroll() {
     if(container.current !== null || aboutMeContainerRef.current !== null || homeContainer.current || myWorksContainerRef.current || hireMeContainerRef.current ){
       const containerScrollTop = container.current?.scrollTop || 0
-      const homeTop = 0;
       const aboutMeTop = aboutMeContainerRef.current?.offsetTop || 0
       const myWorksTop = myWorksContainerRef.current?.offsetTop || 0
       const hireMeTop = hireMeContainerRef.current?.offsetTop   || 0
