@@ -64,7 +64,7 @@ export function HireMe({ hireMeContainerRef }: HireMeProps){
             <div className="flex flex-col gap-6 my-10">
               <SocialLink imgSrc={githubIcon} altAtb='Github Icon' linkUrl="https://github.com/LucasSousa09/"   />
               <SocialLink imgSrc={linkedinIcon} altAtb='Linkedin Icon' linkUrl="https://www.linkedin.com/in/lucas-rodrigues-4892901b4/"   />
-              <SocialLink imgSrc={envelopIcon} altAtb='Envelop Icon' linkUrl="https://mail.google.com/" linkShown="lucasrodrigues.sousa09@gmail.com" />
+              <SocialLink imgSrc={envelopIcon} altAtb='Envelop Icon' linkUrl="https://mail.google.com/" linkShown="lucas.rodrigues.sousa@lrds.com.br" />
             </div>
           </div>
         </div>
