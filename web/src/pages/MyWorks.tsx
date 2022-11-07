@@ -31,21 +31,21 @@ export function MyWorks({ myWorksContainerRef }: MyWorkProps){
       id: "1",
       title: "todo",
       bannerUrl: "https://i.ibb.co/KFfFpWC/todo.png",
-      description: "A simple to-do application. Build with React and stylized with css modules.",
+      description: "A simple to-do application. Build with React and stylized with CSS modules.",
       projectUrl: "https://portifolio-todo-app.netlify.app/"
     },
     {
       id: "2",
       title: "worldTrip",
       bannerUrl: "https://i.ibb.co/D7Yb7f3/worldtrip.png",
-      description: "An Bootcamp Challenge. Build on NextJS, Typescript and Chackra-ui. A responsive website to showoff frontend skills.",
+      description: "A Bootcamp Challenge. Build on NextJS, Typescript, and Chakra-UI. A responsive website to show off frontend skills.",
       projectUrl: "https://worldtrip-azure.vercel.app/"
     },
     {
       id: "3",
       title: "agoraEComVoce",
       bannerUrl: "https://i.ibb.co/3YjBNwm/agoraecomvoce.png",
-      description: "My first website. Build on HTML, CSS, Javascript, Backend on NodeJs and MongoDB as the database.",
+      description: "My first website. Build on HTML, CSS, Javascript, and Backend on NodeJs and MongoDB as the database.",
       projectUrl: "https://agoraecomvoce.herokuapp.com"
     }
 ]
