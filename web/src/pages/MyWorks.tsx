@@ -44,9 +44,9 @@ export function MyWorks({ myWorksContainerRef }: MyWorkProps){
     {
       id: "3",
       title: "agoraEComVoce",
-      bannerUrl: "https://i.ibb.co/3YjBNwm/agoraecomvoce.png",
-      description: "My first website. Build on HTML, CSS, Javascript, and Backend on NodeJs and MongoDB as the database.",
-      projectUrl: "https://agoraecomvoce.herokuapp.com"
+      bannerUrl: "https://i.ibb.co/NK9JrD4/Captura-de-tela-de-2023-11-02-15-29-09.png",
+      description: "A project done on Rocktseat bootcamp of 2022",
+      projectUrl: "https://ignews-coral-gamma.vercel.app"
     }
 ]
 
