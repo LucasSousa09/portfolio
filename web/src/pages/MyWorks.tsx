@@ -43,9 +43,9 @@ export function MyWorks({ myWorksContainerRef }: MyWorkProps){
     },
     {
       id: "3",
-      title: "agoraEComVoce",
-      bannerUrl: "https://i.ibb.co/NK9JrD4/Captura-de-tela-de-2023-11-02-15-29-09.png",
-      description: "A project done on Rocktseat bootcamp of 2022",
+      title: "Ignews",
+      bannerUrl: "https://i.ibb.co/Y3NPDsD/ignews-518.png",
+      description: "A project done on Rocktseat bootcamp of 2022. Build on NextJS, Stripe, Prismic UI, SCSS modules",
       projectUrl: "https://ignews-coral-gamma.vercel.app"
     }
 ]
