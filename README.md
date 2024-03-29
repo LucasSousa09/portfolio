@@ -5,12 +5,11 @@
 
 ![image](https://github.com/LucasSousa09/portfolio/blob/main/web/src/assets/project_presentation.png)
 
-## Front-end Tools
+## Tools
 - React
+- Typescript
 - TailwindCss
 - axios
 - Phosphor Icons 
-
-## Back-end Tools
 - prisma
 - express
