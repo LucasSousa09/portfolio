@@ -9,7 +9,7 @@
 - React
 - TailwindCss
 - axios
-- Phosphor Icons
+- Phosphor Icons 
 
 ## Back-end Tools
 - prisma
