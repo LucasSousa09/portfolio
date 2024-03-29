@@ -36,6 +36,7 @@ export function Header({ currentPageNav }: HeaderProps){
               )
             }
             <ul className="flex justify-between font-medium text-zinc-400 sm:flex-col sm:gap-6 sm:w-full md:flex-row md:gap-0 md:w-[400px] md:text-sm lg:w-[450px] lg:text-base">
+              <li className={`active:text-zinc-300 hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0`}> <a href="https://portfolio-next-seven-kappa.vercel.app/"> Portfolio 2.0 </a> </li>
               <li className={`${currentPageNav === "home" ? 'highlight' : ''} active:text-zinc-300 hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0`}> <a href="#home"> Home </a> </li>
               <li className={`${currentPageNav === "aboutMe" ? 'highlight' : ''} active:text-zinc-300 hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0`}> <a href="#about-me"> About Me </a> </li>
               <li className={`${currentPageNav === "myWorks" ? 'highlight' : ''} active:text-zinc-300 hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0`}> <a href="#my-works"> My work's </a> </li>
@@ -52,6 +53,7 @@ export function Header({ currentPageNav }: HeaderProps){
               )
             }
             <ul className="flex sm:flex-col sm:gap-6 sm:w-full md:flex-row md:gap-0 md:w-[300px] md:text-sm lg:text-base justify-between font-medium text-zinc-400">
+              <li className="hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0"> <a onClick={handleClick} href="https://portfolio-next-seven-kappa.vercel.app/"> Portfolio </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0"> <a onClick={handleClick} href="#home"> Home </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0"> <a onClick={handleClick} href="#about-me"> About Me </a> </li>
               <li className="hover:text-zinc-50 sm:border-b-2 sm:border-zinc-600 sm:w-full sm:text-end md:border-0"> <a onClick={handleClick} href="#my-works"> My work's </a> </li>
